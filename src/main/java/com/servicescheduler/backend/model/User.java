@@ -16,8 +16,8 @@ public abstract class User {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @Column(name = "name", nullable = false, length = 100)
-  private String name;
+  @Column(name="telephone", length = 15)
+  private String telephone;
 
   @Column(name="telephone", length = 15)
   private String telephone;
