@@ -19,9 +19,6 @@ public abstract class User {
   @Column(name="telephone", length = 15)
   private String telephone;
 
-  @Column(name="telephone", length = 15)
-  private String telephone;
-
   @Column(name = "email", unique = true, nullable = false, length = 100)
   private String email;
 
