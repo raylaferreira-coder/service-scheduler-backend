@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.*;
 
+import java.time.LocalDate;
+
 @Entity
 @Table(name="customer")
 @Getter
@@ -20,7 +22,7 @@ public class Customer extends User{
     private String cpf;
 
     @Column(name="data_nascimento", nullable=false)
-    private Data dateNascimento;
+    private LocalDate dateNascimento;
 
     @Column(name="online")
     private Boolean online;
